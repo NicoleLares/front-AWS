@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos World</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: #f8fafc;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 40px;
+            max-width: 1000px;
+        }
+        h1 {
+            color: #1a202c;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #4a5568;
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .table-title {
+            color: #2b6cb0;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            text-align: center;
+            padding: 12px;
+            font-size: 0.9em;
+        }
+        th {
+            background-color: #2b6cb0;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #e2e8f0;
+        }
+        tr:hover {
+            background-color: #cbd5e0;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .btn-primary {
+            background-color: #3182ce;
+            border: none;
+            font-weight: bold;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #2b6cb0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Base de Datos World</h1>
+    
+
+        <div class="table-container">
+            <div class="table-title">Información sobre los Países</div>
+            <div class="table-responsive">
+                <table id="recordsTable" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Continente</th>
+                            <th>Región</th>
+                            <th>Superficie</th>
+                            <th>Población</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <button class="btn btn-primary" onclick="getAllRecordsByCountry()">
+                <i class=></i> País
+            </button>
+            <button class="btn btn-primary" onclick="getAllRecordsByContinent()">
+                <i class=></i> Continente
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript de Bootstrap y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu archivo JS -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
